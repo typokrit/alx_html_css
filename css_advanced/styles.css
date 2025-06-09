@@ -1,0 +1,400 @@
+/* Reset some basic defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  
+  color: #333;
+}
+
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;  
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 116px;  
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+    font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Hero section */
+.hero {
+  background: url('background.png') center/cover no-repeat;
+  padding: 4rem 2rem;
+  color: white;
+  width: auto;
+  height: 1093px;
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.hero h1 {
+  font-size: 120px;
+}
+
+.hero-subtext {
+  display: flex;
+  gap: 60px;
+}
+
+.hero-subtext h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.hero button {
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #C271FF;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.hero button:hover {
+  background-color: #a852e0;
+}
+
+/* Learn from pros */
+.hero h2 {
+  text-align: center;
+  margin: 4rem 0 2rem;
+  font-size: 2rem;
+  color: #C271FF;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.white-text {
+  color: white;
+  font-weight: lighter;
+}
+
+.hero section > div > div {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero section > div > div > div {
+  text-align: center;
+  color: white;
+  max-width: 200px;
+}
+
+
+
+/* --- Testimonial Section --- */
+.testimonial {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background-color: #C271FF;
+  color: white;
+  padding-left: 120px;
+    padding-right: 120px;
+}
+
+.testimonial-img img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.testimonial-content blockquote {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.testimonial-role {
+  text-transform: capitalize;
+  opacity: 0.9;
+}
+
+/* --- Tutorials Section --- */
+.tutorials {
+  padding: 4rem 2rem;
+  background-color: #F5F5F5;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.tutorials h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.tutorials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.tutorial-card {
+  background: white;
+  
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.tutorial-card img:first-child {
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tutorial-text {
+    padding: 1rem ;
+}
+
+.tutorial-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.tutorial-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  width: 30px;
+  height: 30px
+}
+
+.author img {
+  object-fit: cover;
+  border-radius: 50%;
+  
+}
+
+.author h4 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.rating {
+  display: flex;
+  gap: 0.2rem;
+  margin: 0.5rem 0;
+}
+
+.fa-star {
+  color: #C271FF;
+}
+
+.duration {
+  font-size: 0.85rem;
+  color: #999;
+}
+
+.membership {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #071629;
+}
+
+.membership h2 {
+  font-size: 32px;
+  margin-bottom: 2rem;
+  color: #C271FF;
+  font-weight: bold;
+}
+
+.membership h2 span {
+  color: white;
+  font-weight: lighter;
+}
+
+.perks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.perk {
+  max-width: 220px;
+}
+
+.perk img {
+  width: 43.67px;
+  height: 35.35px;
+  margin-bottom: 1rem;
+}
+
+.perk h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.perk p {
+  font-size: 0.95rem;
+  color: #ffffff;
+}
+
+.register-btn {
+  background-color: #C271FF;
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.register-btn:hover {
+  background-color: #a852e0;
+}
+
+
+.faq {
+  padding: 4rem 2rem;
+  background-color: #f5f5f5;
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  font-weight: lighter;
+}
+
+.faq-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  padding-left: 120px;
+    padding-right: 120px;
+}
+
+.faq-column {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.faq-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.faq-item p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+
+
+
+
+/* Footer */
+footer {
+  background-color: #071629;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  width: auto;
+  height: 249px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+footer div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer i {
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  color: white;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #ccc;
+  padding-top: 100px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero section > div > div,
+  main > section:nth-of-type(4) > div,
+  main > section:nth-of-type(3) > div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main > section:nth-of-type(2) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer div {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
