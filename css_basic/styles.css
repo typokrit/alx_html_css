@@ -1,0 +1,115 @@
+/* Reset margin/padding for a clean slate */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eef1f5;
+  color: #333;
+}
+
+header,
+footer {
+  background-color: #1e293b;
+  color: #f1f5f9;
+  padding: 1rem;
+  text-align: center;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+header li a {
+  text-decoration: none;
+  color: #f1f5f9;
+  font-weight: 500;
+}
+
+header li a:hover {
+  text-decoration: underline;
+  color: #38bdf8;
+}
+
+.logo {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+  min-height: 0;
+}
+
+article {
+  flex: 2;
+  padding: 2rem;
+  overflow-y: auto;
+  background-color: #ffffff;
+}
+
+aside {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+  background-color: #f9fafb;
+  border-left: 1px solid #e2e8f0;
+  font-style: italic;
+}
+
+footer {
+  background-color: #1e293b;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  border: 1px solid #cbd5e1;
+  text-align: left;
+}
+
+thead {
+  background-color: #e2e8f0;
+  font-weight: bold;
+}
+
+/* List Styling */
+ul {
+  padding-left: 1.25rem;
+  margin-top: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Link styling */
+a {
+  color: #0ea5e9;
+}
+
+a:hover {
+  color: #0284c7;
+  text-decoration: underline;
+}
