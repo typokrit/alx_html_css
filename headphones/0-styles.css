@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./images/Object.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: auto;
+  /* margin: 30px 230px 0; */
+  /* padding-left: 230px;
+  padding-right: 230px; */
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-left: 230px;
+  padding-right: 230px;
+}
+
+.navbar h2 {
+  color: white;
+  padding-left: 40px;
+  padding-top: 2px;
+  font-family: "Audiowide", sans-serif;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 41px;
+  flex-wrap: wrap;
+}
+li a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+li a:hover {
+  color: #ff6565;
+}
+
+.logo {
+  position: relative;
+  width: 32.78px;
+  height: 31.18px;
+}
+
+.ring {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+.outer {
+  background: white;
+  z-index: 1;
+}
+
+.middle {
+  background: #3b3e42;
+  transform: scale(0.84);
+  z-index: 2;
+}
+
+.inner-ring {
+  background: #ff6b6b;
+  transform: scale(0.66);
+  z-index: 3;
+}
+
+.inner-cut {
+  background: #3b3e42;
+  transform: scale(0.48);
+  z-index: 4;
+}
+
+.core {
+  background: white;
+  transform: scale(0.3);
+  z-index: 5;
+}
+
+/* .hero {
+  background-image: url("./images/Object.png");
+  background-size: cover;
+  height: 933px;
+} */
+
+#menu-toggle {
+  display: none;
+}
+
+/* Hamburger style */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 10;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+/* .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+.hero .content h1 {
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+}
+.hero .content h3 {
+  color: white;
+  font-size: 14px;
+  padding-bottom: 40px;
+}
+.hero .content p {
+  width: 700px;
+  color: white;
+  padding-top: 40px;
+  font-size: 16px;
+}
+button {
+  color: white;
+  background-color: #ff6565;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.3s background-color ease-in-out;
+}
+button:hover {
+  background-color: #ff4646;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+  }
+  .hero .content,
+  .navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .hero {
+    height: auto;
+    padding: 40px 0;
+  }
+  .hamburger {
+    display: flex;
+  }
+
+  .hero .content h1 {
+    font-size: 24px;
+  }
+
+  .hero .content h3 {
+    font-size: 12px;
+  }
+
+  .hero .content p {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  #menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+
+  .navbar {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /* .logo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+    transform: none;
+    left: auto;
+    font-size: 16px;
+    gap: 5px;
+  } */
+
+  /* .ring {
+    transform: scale(0.7);
+  } */
+
+  .logo-name {
+    font-size: 16px;
+    padding: 0;
+  }
+}
